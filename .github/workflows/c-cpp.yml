@@ -1,15 +1,12 @@
 name: C/C++ CI
-
 on:
-  push:
-    branches: [ "4.19" ]
-  pull_request:
-    branches: [ "4.19" ]
+  workflow_dispatch:
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+    name: build
 
     steps:
     - uses: actions/checkout@v4
